@@ -1,4 +1,6 @@
-const key = "a07ef91a271c9d68d4033d0bbe860626"
+require('dotenv').config();
+
+const key = process.env.API_KEY
 const posterURL = "https://image.tmdb.org/t/p/w1280"
 
 const titles = []
