@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS moviereview_db;
-CREATE DATABASE moviereview_db;
+DROP DATABASE IF EXISTS moviereviews_db;
+CREATE DATABASE moviereviews_db;
 
-USE moviereview_db;
+USE moviereviews_db;
 
 -- CREATE TABLE User (
 --     person_id int NOT NULL AUTO_INCREMENT,
