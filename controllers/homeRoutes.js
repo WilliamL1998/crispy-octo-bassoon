@@ -1,4 +1,5 @@
 const router = require("express").Router();
+require('dotenv').config();
 
 router.get("/", (req, res) => {
     res.render("home")
@@ -14,6 +15,10 @@ router.get("/login", (req, res) => {
 
 router.get("/movie", (req, res) => {
     res.render("moviepage")
+})
+
+router.get("/key", (req, res) => {
+    res.json(process.env.API_KEY)
 })
 
 module.exports = router;
