@@ -12,4 +12,8 @@ router.get("/login", (req, res) => {
     res.render("login")
 })
 
+router.get("/movie", (req, res) => {
+    res.render("moviepage")
+})
+
 module.exports = router;
