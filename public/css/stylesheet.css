@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 /* index */
 
-=======
->>>>>>> 0fab02e0f7f7e6fb6498d7e17674ec4f0f516059
 .button.is-primary {
     background-color: #34b3f1;
 }
@@ -27,12 +24,7 @@
     padding: 50px 100px;
 }
 
-<<<<<<< HEAD
 /* Carousel */
-=======
-
-/* The main CSS styles for the Netflix Carousel. */
->>>>>>> 0fab02e0f7f7e6fb6498d7e17674ec4f0f516059
 
 .media-container {
   position: relative;
@@ -108,11 +100,7 @@
   display: none;
 }
 
-<<<<<<< HEAD
 /* Navigation controls */
-=======
-/* Style the navigation controls. */
->>>>>>> 0fab02e0f7f7e6fb6498d7e17674ec4f0f516059
 
 .navigation-indicators {
   opacity: 0;
@@ -151,15 +139,10 @@
 }
 
 /* Review's form */
-<<<<<<< HEAD
-
-=======
->>>>>>> 0fab02e0f7f7e6fb6498d7e17674ec4f0f516059
 .form1{
     padding: 50px 250px 250px 250px;
 }
 
-<<<<<<< HEAD
 .label1{
     font-size: 20px;
     padding-bottom: 7px;
@@ -179,13 +162,6 @@
 .button.is-link.is-light:hover {
     background-color:  #34b3f1;; 
 }
-=======
-.title1{
-    color: red;
-    font-size: 30px;
-    padding-bottom: 7px;
-}
->>>>>>> 0fab02e0f7f7e6fb6498d7e17674ec4f0f516059
 
 /* Log in form */
 
@@ -197,7 +173,6 @@
     font-size: 20px;
     padding-bottom: 20px;
 }
-<<<<<<< HEAD
 
 .button.is-success {
     background-color: #34b3f1;
@@ -232,5 +207,3 @@
   font-size: 20px;
   font-weight: bold;
 }
-=======
->>>>>>> 0fab02e0f7f7e6fb6498d7e17674ec4f0f516059
