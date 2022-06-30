@@ -2,32 +2,18 @@ const router = require('express').Router();
 const { User } = require('../../models');
 
 router.post('/signup', async (req, res) => {
-    var newUser = new User({
-        email: req.body.email,
-        password: req.body.password
-    })
-    
-    await User.findOne({
-        where: {
-            email: req.body.email
-        }
-    })
-    .then(async userData => {
-        if (userData) {
-            res.json({ message: "User already exists."})
-        } else {
-            await newUser.save()
-            .then (() => {
-                res.status(200).json(newUser)
-            })
-            .catch (err => {
-                console.error(err);
-            })
-        }
-    })
-    .catch (err => {
-        console.error(err);
-    })
+  try {
+      const userData = await User.create(req.body);
+  
+      req.session.save(() => {
+        req.session.user_id = userData.id;
+        req.session.logged_in = true;
+  
+        res.status(200).json(userData);
+      });
+    } catch (err) {
+      res.status(400).json(err);
+    }
 })
 
 module.exports = router;
