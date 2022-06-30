@@ -152,6 +152,11 @@ opacity: 1;
   background-color: #34b3f1;
 }
 
+
+.label1{
+    font-size: 20px;
+    padding-bottom: 7px;
+
 .button.is-link:hover {
   background-color:  gold; 
 }
@@ -162,6 +167,22 @@ opacity: 1;
 
 .button.is-link.is-light:hover {
   background-color:  #34b3f1;; 
+
+}
+.button.is-link {
+    background-color: #34b3f1;
+}
+
+.button.is-link:hover {
+    background-color:  gold; 
+}
+
+.button.is-link.is-light {
+    background-color:  gold; 
+}
+
+.button.is-link.is-light:hover {
+    background-color:  #34b3f1;; 
 }
 
 /* Log in form */
@@ -179,6 +200,14 @@ opacity: 1;
   background-color: #34b3f1;
 }
 
+
+.button.is-success {
+    background-color: #34b3f1;
+}
+
+.button.is-success:hover {
+    background-color: gold;
+
 .button.is-success:hover {
   background-color: gold;
 }
@@ -187,6 +216,8 @@ opacity: 1;
 /* Sign in form */
 
 .form3{
+    padding: 50px 250px 250px 250px;
+
   padding: 50px 250px 250px 250px;
 }
 
@@ -194,6 +225,22 @@ opacity: 1;
 /* Movie-id */
 
 .movie-id{
+
+  padding: 50px 250px 250px 250px;
+}
+
+.movie-name{
+  padding-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.desc{
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
 padding: 50px 250px 250px 250px;
 }
 
