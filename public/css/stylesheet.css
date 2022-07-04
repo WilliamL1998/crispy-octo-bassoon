@@ -24,6 +24,15 @@
   padding: 50px 100px;
 }
 
+/* Contact us form */
+.button.is-success {
+  background-color: #34b3f1;
+}
+
+.button.is-success:hover {
+  background-color: gold;
+}
+
 /* Cards */
 .container{
   padding:0px 100px 50px 100px;
