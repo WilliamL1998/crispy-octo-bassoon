@@ -19,10 +19,6 @@ router.get("/movie", (req, res) => {
     res.render("moviepage")
 })
 
-router.get("/key", (req, res) => {
-    res.json(process.env.API_KEY)
-})
-
 router.get("/populate", async (req, res) => {
     try {
         const movieData = await Movie.findAll()
