@@ -1,3 +1,5 @@
+const { Movie } = require("../models");
+
 const router = require("express").Router();
 require('dotenv').config();
 
@@ -19,6 +21,15 @@ router.get("/movie", (req, res) => {
 
 router.get("/key", (req, res) => {
     res.json(process.env.API_KEY)
+})
+
+router.get("/populate", async (req, res) => {
+    try {
+        const movieData = await Movie.findAll()
+        res.status(200).json(movieData)
+    } catch (err) {
+        res.status(500).json(err);
+    }
 })
 
 module.exports = router;
