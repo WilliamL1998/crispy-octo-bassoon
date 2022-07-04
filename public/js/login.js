@@ -1,6 +1,8 @@
 const loginFormHandler = async (event) => {
     event.preventDefault();
   
+    console.log("YO!!!!")
+
     const email = document.querySelector('#email-login').value.trim();
     const password = document.querySelector('#password-login').value.trim();
   
@@ -13,7 +15,7 @@ const loginFormHandler = async (event) => {
   
       if (response.ok) {
         // If successful, redirect the browser to the profile page
-        document.location.replace('/home');
+        document.location.replace('/');
       } else {
         alert(response.statusText);
       }
@@ -21,5 +23,5 @@ const loginFormHandler = async (event) => {
   };
 
   document
-  .querySelector('.login-form')
-  .addEventListener('submit', loginFormHandler);
+  .querySelector('.thisthing')
+  .addEventListener('click', loginFormHandler);
