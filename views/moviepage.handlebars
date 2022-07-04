@@ -9,4 +9,16 @@
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias veritatis dignissimos a, aliquam quia doloribus quos sed fugit repudiandae rerum, cum ipsum, impedit repellat quidem. Dolor veritatis necessitatibus delectus voluptatibus.</p>
 </div>
 
+{{#each reviews as |review| }}
+<div class="row mb-4 project">
+    <div class="col-md-5">
+        <h2>{{movie.title}}</h2>
+        <img src="{{movie.image}}">
+        <p>Created by {{user.email}} on {{format_date review.date_created}}</p>
+        <p>
+            {{review.review}}
+        </p>
+    </div>
+</div>
+{{/each}}
 <script src="js/moviepage.js"></script>
