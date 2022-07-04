@@ -26,8 +26,16 @@ function displayMovie() {
                 overviews.push(data.results[i].overview)
             }
             console.log(overviews)
+            populatePosters();
         })
     })
 }
 
 displayMovie();
+
+function populatePosters() {
+    let imgEl = document.createElement("img");
+    for (var i = 0; i < posters.length; i++) {
+        imgEl.setAttribute("src", posters[i])
+    }
+}
