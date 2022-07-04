@@ -51,6 +51,16 @@ const movieData = [
         "image": "https://image.tmdb.org/t/p/w1280/iSx6t4mj1FT4ePqPYHW287SmNa1.jpg",
         "description": "As the human species adapts to a synthetic environment, the body undergoes new transformations and mutations. Accompanied by his partner Caprice, celebrity performance artist Saul Tenser showcases the metamorphosis of his organs. Meanwhile, a mysterious group tries to use Saul's notoriety to shed light on the next phase of human evolution."
     },
+    {
+        "title": "Mr. Malcolm's List",
+        "image": "https://image.tmdb.org/t/p/w1280/LXcoR9X3QXm0T9Qf9pw56EgRla.jpg",
+        "description": "When she fails to meet an item on his list of requirements for a bride, Julia Thistlewaite is jilted by London’s most eligible bachelor, Mr. Malcolm. Feeling humiliated and determined to exact revenge, she convinces her friend Selina Dalton to play the role of his ideal match. Soon, Mr. Malcolm wonders whether he’s found the perfect woman...or the perfect hoax."
+    },
+    {
+        "title": "The Sea Beast",
+        "image": "https://image.tmdb.org/t/p/w1280/7363mrbx0Le5VOgX3GuxTF8ORbN.jpg",
+        "description": "The life of a legendary sea monster hunter is turned upside down when a young girl stows away on his ship."
+    },
 ];
 const seedMovies = () => Movie.bulkCreate(movieData);
 
