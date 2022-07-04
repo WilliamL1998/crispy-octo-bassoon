@@ -18,25 +18,9 @@
 <!-- Form -->
 <div class="form1">
   <div class="field">
-    <label class="label label1">Select a movie</label>
-    <div class="control">
-      <div class="select">
-        <select>
-          <option>Movie 1</option>
-          <option>Movie 2</option>
-          <option>Movie 3</option>
-          <option>Movie 4</option>
-          <option>Movie 5</option>
-          <option>Movie 6</option>
-        </select>
-      </div>
-    </div>
-  </div>
-
-  <div class="field">
     <label class="label">Message</label>
     <div class="control">
-      <textarea class="textarea" placeholder="Textarea"></textarea>
+      <textarea class="textarea" id="review-text" placeholder="Textarea"></textarea>
     </div>
   </div>
 
@@ -65,7 +49,7 @@
 
   <div class="field is-grouped">
     <div class="control">
-      <button class="button is-link">Submit</button>
+      <button class="button is-link" id="submit-review">Submit</button>
     </div>
     <div class="control">
       <button class="button is-link is-light">Cancel</button>
