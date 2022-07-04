@@ -1,9 +1,9 @@
 var key
 const posterURL = "https://image.tmdb.org/t/p/w1280"
 
-const titles = []
-const posters = []
-const overviews = []
+var titles = []
+var posters = []
+var overviews = []
 
 function displayMovie() {
     fetch('/key', {method: 'GET'})
@@ -26,16 +26,20 @@ function displayMovie() {
                 overviews.push(data.results[i].overview)
             }
             console.log(overviews)
-            populatePosters();
         })
+        .then(populateCards)
     })
 }
 
 displayMovie();
 
-function populatePosters() {
-    let imgEl = document.createElement("img");
-    for (var i = 0; i < posters.length; i++) {
+function populateCards() {
+    for (var i = 0; i < 12; i++) {
+        var imgEl = document.getElementById(`poster-${i}`)
         imgEl.setAttribute("src", posters[i])
+        var titleEl = document.getElementById(`title-${i}`)
+        titleEl.textContent = titles[i]
+        var descriptionEl = document.getElementById(`description-${i}`)
+        descriptionEl.textContent = overviews[i]
     }
 }
