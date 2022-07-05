@@ -40,6 +40,10 @@
 
 /* Review's form */
 
+.review-info {
+  padding-left: 100px;
+}
+
 .form1 {
   padding: 50px 250px 250px 250px;
 }
@@ -92,7 +96,7 @@
 /* Movie-info */
 
 .movie-info {
-  padding: 50px 250px 250px 250px;
+  padding: 50px 250px 50px 250px;
 }
 
 .movie-id {
