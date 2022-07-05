@@ -1,9 +1,10 @@
 const { Movie } = require("../models");
+const withAuth = require('../utils/auth')
 
 const router = require("express").Router();
 require('dotenv').config();
 
-router.get("/", (req, res) => {
+router.get("/", withAuth, (req, res) => {
     res.render("home")
 })
 
@@ -12,7 +13,7 @@ router.get("/signup", (req, res) => {
 })
 
 router.get("/login", (req, res) => {
-    res.render("login")
+    res.render("login", {loggedIn: req.session.loggedIn})
 })
 
 router.get("/movie", (req, res) => {

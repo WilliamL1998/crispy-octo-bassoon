@@ -49,7 +49,7 @@
           <div class="navbar-end">
             <div class="navbar-item">
               <div class="buttons">
-                {{#if logged_in}}
+                {{#if loggedIn}}
                 <button class="button is-light" id="logout">logout</button>
                 {{else}}
                 <a href="http://localhost:3001/signup" class="button is-primary"> <strong>Sign up</strong> </a>
@@ -80,6 +80,8 @@
   </div>
 </footer>
   </body>
-  
+  {{#if loggedIn}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
 </html>
 
