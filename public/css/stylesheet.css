@@ -89,10 +89,15 @@
   padding: 50px 250px 250px 250px;
 }
 
-/* Movie-id */
+/* Movie-info */
+
+.movie-info {
+  padding: 50px 250px 250px 250px;
+}
 
 .movie-id {
-  padding: 50px 250px 250px 250px;
+  padding: 0px;
+  color: white;
 }
 
 .movie-name {
