@@ -1,18 +1,9 @@
 <div class="movie-id">
 
-  <h1 class="movie-name">Movie Name:</h1>
-  <p class="p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-    Nostrum voluptate consequuntur obcaecati. Aut reprehenderit aliquid labore
-    dicta temporibus accusantium cumque voluptatum? Molestias doloremque
-    distinctio blanditiis saepe harum debitis eaque neque.</p>
+  <h1 class="movie-name">{{movie1.title}}</h1>
+  <img src={{movie1.image}} alt="poster" />
+  <p class="p1">{{movie1.description}}</p>
 
-  <img src="images/poster.jpeg" alt="poster" />
-
-  <h2 class="desc">Description:</h2>
-  <p class="p2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-    Molestias veritatis dignissimos a, aliquam quia doloribus quos sed fugit
-    repudiandae rerum, cum ipsum, impedit repellat quidem. Dolor veritatis
-    necessitatibus delectus voluptatibus.</p>
 </div>
 
 <!-- Form -->
@@ -35,15 +26,13 @@
 </div>
 
 
-{{#each reviews as |review| }}
+{{#each movie1.reviews as |review| }}
 <div class="row mb-4 project">
     <div class="col-md-5">
-        <h2>{{movie.title}}</h2>
-        <img src="{{movie.image}}">
-        <p>Created by {{user.email}} on {{format_date review.date_created}}</p>
         <p>
             {{review.review}}
         </p>
+        <p>Created by {{review.user_id}} on {{format_date review.date_created}}</p>
     </div>
 </div>
 {{/each}}
