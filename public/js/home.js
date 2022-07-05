@@ -2,7 +2,6 @@ function displayMovie() {
     fetch('/populate', {method: 'GET'})
     .then(response => response.json())
     .then(data => {
-        console.log(data)
         for (var i = 0; i < data.length; i++) {
             var imgEl = document.getElementById(`poster-${i}`)
             imgEl.setAttribute('src', data[i].image)
