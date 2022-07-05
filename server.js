@@ -23,7 +23,11 @@ const sess = {
     db: sequelize
   })
 };
-
+app.use(function(req,res,next){
+  req.session.cookie.expires = false;
+  req.session.cookie.maxAge = 5 * 60 * 1000
+  next()
+})
 app.use(session(sess));
 
 // Inform Express.js on which template engine to use
