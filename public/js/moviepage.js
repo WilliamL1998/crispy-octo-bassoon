@@ -4,7 +4,7 @@ const newReview = async (event) => {
     const reviewText = document.querySelector('#review-text').value;
 
     if (reviewTitle && reviewText) {
-        const response = await fetch (`/review/newReview`, {
+        const response = await fetch (`/api/reviews/newreview`, {
             method: 'POST',
             body: JSON.stringify({reviewTitle, reviewText}),
             headers: {
@@ -19,4 +19,4 @@ const newReview = async (event) => {
     }
 }
 
-document.querySelector('#submit-review').addEventListener('submit', newReview);
+document.querySelector('#submit-review').addEventListener('click', newReview);
