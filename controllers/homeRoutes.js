@@ -31,8 +31,8 @@ router.get("/populate", async (req, res) => {
 
 router.get("/:id", async (req, res) => {
     try {
-        // const data = await sequelize.query(`SELECT review, date_created, title, image, description, email FROM review JOIN movie ON review.movie_id = movie.id JOIN user ON review.user_id = user.id WHERE movie_id = ${req.params.id};`, { type: QueryTypes.SELECT });
-        // console.log(data)
+        // const movieData = await sequelize.query("SELECT review, date_created, title, image, description, email FROM review JOIN movie ON review.movie_id = movie.id JOIN user ON review.user_id = user.id WHERE movie_id = " + req.params.id + ";", { type: QueryTypes.SELECT });
+        // console.log(movieData)
         const movieData = await Movie.findByPk(req.params.id,
             {
                 include: [{
