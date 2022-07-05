@@ -7,13 +7,15 @@
 
 ## Description
 
+Through the many outlets of movie watching, whether it be in theatres or from the comfort of your own home, people are always looking for new movies to watch. We decided that building a site that allows users to interact and provide their own reviews, would help anyone when looking for that next exciting movie to watch. 
+
+## Technologies Used
 Regarding the CSS, we use Bulma as a CSS framework. Is easy to understand and to use.
-There are two ways to install it, adding the CDN link in the header of html file or install the package to node modules.
-We used the first option. Finally, we build a site simple but colorful and responsive.
+There are two ways to install it, adding the CDN link in the header of html file or install the package to node modules. We used the first option.
 
-[Add JS description here]
+Throughout the rest of the project, we used javascript and express routes in order navgivate between pages and capture content from the sign-up and login forms. We made sure to include authentication and environment variables in order to protect passwords and any sensitive information.
 
-
+Lastly, with all the routes and script set up, we used heroku and successfully deployed the application.
 
 
   
@@ -60,13 +62,16 @@ SO THAT I can check which are the best movies.
 
 ```
 
+## Installation
+For use on local device, clone down to your local machine. Then type "npm install" followed by "node seeds/index.js" to seed the database. Once finished with the previous steps, use npm start to run the app.
+
 ## Screenshots of the application
 
 The following image shows a mock-up of the generated HTML’s appearance and functionality and some examples of the code.
 
-![HTML webpage titled “My Team”](./Assets/html-webpage.png)
-![Questions](./Assets/questions.png)
-![Tests](./Assets/tests.png)
+![Homepage](/assets/website-homepage.PNG)
+![Login](/assets/website-login.PNG)
+![Review](/assets/reviews-moviepage.PNG)
 
 ### Credits:
 
