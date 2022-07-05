@@ -1,8 +1,6 @@
 const loginFormHandler = async (event) => {
     event.preventDefault();
-  
-    console.log("YO!!!!")
-
+    
     const email = document.querySelector('#email-login').value.trim();
     const password = document.querySelector('#password-login').value.trim();
   
