@@ -16,18 +16,17 @@ const hbs = exphbs.create({ helpers });
 
 const sess = {
   secret: 'Super secret secret',
-  cookie: {},
+  cookie: {
+    maxAge: 5*60*1000,
+    expires: false
+  },
   resave: false,
   saveUninitialized: true,
   store: new SequelizeStore({
     db: sequelize
   })
 };
-app.use(function(req,res,next){
-  req.session.cookie.expires = false;
-  req.session.cookie.maxAge = 5 * 60 * 1000
-  next()
-})
+
 app.use(session(sess));
 
 // Inform Express.js on which template engine to use

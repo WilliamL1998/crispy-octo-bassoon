@@ -9,11 +9,11 @@ const router = require("express").Router();
 require('dotenv').config();
 
 router.get("/", withAuth, (req, res) => {
-    res.render("home")
+    res.render("home", {loggedIn: req.session.loggedIn})
 })
 
 router.get("/signup", (req, res) => {
-    res.render("signup")
+    res.render("signup", {loggedIn: req.session.loggedIn})
 })
 
 router.get("/login", (req, res) => {
